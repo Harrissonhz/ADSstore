@@ -1,0 +1,60 @@
+[
+  {
+    "id": "microfono-omc-523",
+    "nombre": "Micrófono Inalámbrico 2 en 1 para iPhone y Android Tipo C (OMC-523)",
+    "descripcion": "Este dispositivo es una solución versátil y de alta calidad para aquellos que buscan mejorar su experiencia de grabación de audio en dispositivos móviles, ya sea para contenido multimedia, llamadas o cualquier otra aplicación donde el sonido claro sea esencial. Incluye adaptadores para iPhone y Android, batería de larga duración y diseño compacto.",
+    "precio": 70000,
+    "descuento": 60000,
+    "color": ["Negro", "Blanco", "Gris"],
+    "diseño": ["Redondo", "Cuadrado", "Triangular"],
+    "categorias": ["Tecnología", "Accesorios", "Cursos Virtuales", "Hombres"],
+    "imagenes": [
+      "img/Microfono.jpg",
+      "img/Patineta.jpg",
+      "img/SoporteLaptop.jpg",
+      "img/BannerAds.jpg",
+      "img/CursoOnline.jpg",
+      "img/Programador.jpg"
+    ],
+    "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "caracteristicas": [
+      "Compatibilidad: iPhone y Android Tipo C",
+      "Batería recargable de larga duración",
+      "Calidad de audio profesional",
+      "Fácil de usar y transportar"
+    ]
+  },
+  {
+    "id": "patineta-newboler",
+    "nombre": "Bolso Patineta Eléctrica NEWBOLER",
+    "descripcion": "El compañero ideal para llevar tu patineta eléctrica a todas partes! Diseñado para brindarte comodidad y estilo, este bolso es la solución perfecta para transportar tus objetos personales en tu patineta de manera fácil y elegante.",
+    "precio": 80000,
+    "color": ["Gris"],
+    "talla": "Única",
+    "categorias": ["Deportes", "Accesorios", "Aire Libre", "Hombres"],
+    "imagenes": [
+      "img/Patineta.jpg"
+    ],
+    "video": "https://www.youtube.com/embed/otroVideoID",
+    "caracteristicas": [
+      "Material resistente al agua",
+      "Gran capacidad de almacenamiento"
+    ]
+  },
+  {
+    "id": "soporte-laptop-araña",
+    "nombre": "Soporte para Computador Portátil en aluminio en forma de araña",
+    "descripcion": "Soporte ergonómico ajustable para laptop que mejora la postura y la ventilación de tu dispositivo. En aluminio, con un diseño moderno y funcional. y con un diseño de aluminio en forma de araña exclusivo para ti. en forma de araña con 5 niveles de altura ajustable.",
+    "precio": 40000,
+    "categorias": ["Tecnología", "Accesorios", "Oficina", "Hombres","Mujeres"],
+    "imagenes": [
+      "img/SoporteLaptop.jpg"
+    ],
+    "video": "https://www.youtube.com/embed/otroVideoID2",
+    "caracteristicas": [
+      "Aluminio resistente",
+      "5 niveles de altura ajustable",
+      "Mejora la ventilación"
+    ]
+  }
+] 

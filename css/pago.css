@@ -1,0 +1,189 @@
+/*
+    Archivo: pago.css
+    Descripción: Hoja de estilos para la página de pago en ADS Store.
+    Ajusta formularios, botones y layout de la sección de pago.
+    Autor: [Tu Nombre o Equipo]
+    Fecha: [Fecha de última edición]
+*/
+
+.cart-item {
+    transition: all 0.3s ease;
+}
+
+.cart-item:hover {
+    background-color: #f8f9fa;
+}
+
+.payment-section {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    padding: 2rem;
+}
+
+/* Estilos adicionales para mejorar la experiencia de usuario */
+.payment-methods {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.payment-method {
+    padding: 1.5rem;
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #fff;
+}
+
+.payment-method:hover {
+    border-color: #007bff;
+    transform: translateY(-2px);
+}
+
+.payment-method.active {
+    border-color: #007bff;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.1);
+}
+
+.payment-method i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+}
+
+.payment-method p {
+    margin: 0;
+    font-weight: 500;
+    color: #212529;
+}
+
+/* Estilos para los detalles de pago */
+.payment-detail {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+
+.payment-detail h5 {
+    color: #212529;
+    font-weight: 600;
+}
+
+.payment-detail .text-muted {
+    font-size: 0.9rem;
+}
+
+/* Estilos para el botón de copiar */
+.input-group .btn-outline-secondary {
+    border-color: #ced4da;
+}
+
+.input-group .btn-outline-secondary:hover {
+    background-color: #e9ecef;
+    border-color: #ced4da;
+}
+
+/* Estilos para el botón de Mercado Pago */
+.btn-primary {
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+}
+
+.btn-primary i {
+    font-size: 1.2rem;
+}
+
+/* Estilos para el QR */
+.payment-detail img {
+    border: 1px solid #dee2e6;
+    border-radius: 12px;
+    padding: 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+}
+
+.payment-detail img:hover {
+    transform: scale(1.02);
+}
+
+/* Ajuste específico para el contenedor del QR */
+#qrDetail {
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+}
+
+.cart-summary {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.cart-item {
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.item-image {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.item-details h6 {
+    color: #212529;
+    margin-bottom: 0.5rem;
+}
+
+.item-details .text-muted {
+    font-size: 0.9rem;
+}
+
+/* Estilos para Mercado Pago */
+.mercadopago-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.mercadopago-logo {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.mercadopago-logo:hover {
+    transform: scale(1.05);
+}
+
+/* Ajuste para el botón de Mercado Pago */
+.mercadopago-container .btn-primary {
+    padding: 0.75rem 2rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.mercadopago-container .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+} 
