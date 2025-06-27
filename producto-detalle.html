@@ -1,0 +1,251 @@
+<!--
+    Archivo: producto-detalle.html
+    Descripción: Página de detalle de producto en ADS Store.
+    Muestra información detallada, imágenes, video, selector de cantidad y permite agregar al carrito.
+    Autor: [Tu Nombre o Equipo]
+    Fecha: [Fecha de última edición]
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Producto | ADS Store</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/tienda.css">
+</head>
+<body>
+    <!-- =======================
+         Navbar de navegación
+         Igual que en index.html, contiene enlaces a las principales secciones
+    ======================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <span class="fw-bold"><i class="fas fa-store me-2"></i>ADS-Store  "OutletShop"</span>
+            </a>
+            <div class="d-flex flex-grow-1 justify-content-center">
+                <ul class="navbar-nav flex-row">
+                    <li class="nav-item">
+                        <a href="https://www.facebook.com/profile.php?id=61550078453724" class="nav-link px-2" target="_blank" title="Facebook"><i class="fab fa-facebook fa-lg text-white"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.instagram.com/OutletShop_for_my/" class="nav-link px-2" target="_blank" title="Instagram"><i class="fab fa-instagram fa-lg text-white"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.youtube.com/@OutletShopTiendaVirtual" class="nav-link px-2" target="_blank" title="YouTube"><i class="fab fa-youtube fa-lg text-white"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://tiktok.com/@outletshoptienda" class="nav-link px-2" target="_blank" title="TikTok"><i class="fab fa-tiktok fa-lg text-white"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="producto-mes.html">¡Lo Más Vendido!</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://harrissonhz.github.io/ADS-academy/index.html" target="_blank">Academia Virtual</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://wa.me/573054476133?text=Hola%20ADS%20estoy%20interesado%20en%20los%20cursos%20virtuales" target="_blank">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrito.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="badge bg-primary" id="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- =======================
+         Sección Detalle del Producto
+         Incluye miniaturas, carrusel de imágenes, video y detalles del producto
+    ======================= -->
+    <section class="py-5 mt-5">
+        <div class="container-fluid" style="max-width:100vw; margin:auto;">
+            <div class="row">
+                <!-- Miniaturas y Carrusel de imágenes -->
+                <div class="col-12 col-lg-7">
+                    <div class="row">
+                        <!-- Miniaturas de imágenes del producto -->
+                        <div class="col-3 d-flex flex-column align-items-center" id="miniaturas-producto">
+                            <!-- Miniaturas aquí (se insertan dinámicamente) -->
+                        </div>
+                        <!-- Carrusel principal de imágenes -->
+                        <div class="col-9">
+                            <div id="carouselProducto" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                                <div class="carousel-indicators" id="carousel-indicadores"></div>
+                                <div class="carousel-inner" id="carousel-imagenes">
+                                    <!-- Imágenes del producto aquí (dinámico) -->
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProducto" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselProducto" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Video de YouTube relacionado al producto -->
+                    <div class="mt-4">
+                        <div class="ratio ratio-16x9">
+                            <iframe id="video-producto" src="" title="Video del producto" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <!-- Información y acciones del producto -->
+                <div class="col-12 col-lg-5" style="max-width: 500px;">
+                    <h2 class="fw-bold mb-3" id="titulo-producto"></h2>
+                    <div id="atributos-producto" class="mb-2"></div>
+                    <div id="selectores-producto" class="mb-3"></div>
+                    <div id="precio-producto-container">
+                        <h4 class="text-primary mb-3" id="precio-producto"></h4>
+                        <h5 class="text-danger mb-3" id="descuento-producto" style="display:none;"></h5>
+                    </div>
+                    <!-- Selector de cantidad -->
+                    <form class="mb-4">
+                        <label for="cantidad" class="form-label">Cantidad:</label>
+                        <div class="input-group" style="max-width: 150px;">
+                            <button class="btn btn-outline-secondary" type="button" onclick="document.getElementById('cantidad').stepDown()">-</button>
+                            <input type="number" class="form-control text-center" id="cantidad" value="1" min="1">
+                            <button class="btn btn-outline-secondary" type="button" onclick="document.getElementById('cantidad').stepUp()">+</button>
+                        </div>
+                    </form>
+                    <!-- Botón para agregar al carrito -->
+                    <button class="btn btn-primary btn-lg mb-4" id="add-to-cart-btn"><i class="fas fa-shopping-cart me-2"></i>Agregar al Carrito</button>
+                    <h5 class="fw-bold">Descripción del producto</h5>
+                    <p id="descripcion-producto"></p>
+                    <ul id="caracteristicas-producto"></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =======================
+         Pie de página (Footer)
+         Información de contacto y enlaces rápidos
+    ======================= -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>ADS Store</h5>
+                    <p>Tu tienda en línea de confianza para productos digitales y físicos. Ofrecemos una experiencia de compra segura y rápida. Descubre nuestras ofertas y disfruta de envíos a todo el país.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="sobre-nosotros.html" class="text-white">Sobre Nosotros</a></li>
+                        <li><a href="politica-privacidad.html" class="text-white">Política de Privacidad</a></li>
+                        <li><a href="terminos-condiciones.html" class="text-white">Términos y Condiciones</a></li>
+                        <li><a href="preguntas-frecuentes.html" class="text-white">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-envelope me-2"></i>outletshoptiendavirtual@gmail.com</li>
+                        <li><i class="fas fa-phone me-2"></i>+57 305 4476 133</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i>Medellín, Colombia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <a href="https://www.facebook.com/profile.php?id=61550078453724" class="text-white me-3" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="https://www.instagram.com/OutletShop_for_my/" class="text-white me-3" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://www.youtube.com/@OutletShopTiendaVirtual" class="text-white me-3" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+                <a href="https://tiktok.com/@outletshoptienda" class="text-white me-3" target="_blank"><i class="fab fa-tiktok fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =======================
+         Scripts JS
+         Incluye Bootstrap y scripts personalizados para la página de detalle
+    ======================= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/tienda.js"></script>
+    <script src="js/producto-detalle.js"></script>
+
+    <!-- WhatsApp Flotante -->
+    <!-- Botón flotante para contacto rápido por WhatsApp -->
+    <a href="https://wa.me/573054476133?text=Hola%20ADS%20estoy%20interesado%20en%20los%20cursos%20virtuales" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- =======================
+         Modal para visor de imagen ampliada
+         Permite ver imágenes del producto en tamaño grande y navegar entre ellas
+    ======================= -->
+    <div class="modal fade" id="modalImagenAmpliada" tabindex="-1" aria-labelledby="modalImagenAmpliadaLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-body text-center p-0 position-relative">
+            <button id="modal-flecha-prev" type="button" class="btn btn-dark position-absolute top-50 start-0 translate-middle-y ms-2" style="z-index:2;" aria-label="Anterior">
+              <i class="fas fa-chevron-left fa-2x"></i>
+            </button>
+            <img id="imagen-ampliada" src="" class="img-fluid rounded shadow" alt="Imagen ampliada">
+            <button id="modal-flecha-next" type="button" class="btn btn-dark position-absolute top-50 end-0 translate-middle-y me-2" style="z-index:2;" aria-label="Siguiente">
+              <i class="fas fa-chevron-right fa-2x"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal para imagen ampliada de producto -->
+    <div class="modal fade" id="modalImagenDiseno" tabindex="-1" aria-labelledby="modalImagenDisenoLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+          <div class="modal-header border-0">
+            <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img id="imagen-diseno-ampliada" src="" class="img-fluid rounded shadow" alt="Imagen producto ampliada">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      setTimeout(() => {
+        document.querySelectorAll('#carousel-imagenes .carousel-item img').forEach(img => {
+          img.addEventListener('click', function() {
+            document.getElementById('imagen-diseno-ampliada').src = this.src;
+            const modal = new bootstrap.Modal(document.getElementById('modalImagenDiseno'));
+            modal.show();
+          });
+        });
+      }, 500);
+    });
+
+    if (producto.agotado) {
+      document.getElementById('add-to-cart-btn').classList.add('disabled');
+      document.getElementById('add-to-cart-btn').setAttribute('disabled', 'disabled');
+      document.getElementById('add-to-cart-btn').textContent = 'Producto Agotado';
+      document.getElementById('add-to-cart-btn').insertAdjacentHTML('beforebegin', '<span class="badge bg-danger mb-3">Agotado</span>');
+    }
+    </script>
+</body>
+</html> 

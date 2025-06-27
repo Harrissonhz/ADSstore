@@ -1,0 +1,171 @@
+<!--
+    Archivo: carrito.html
+    Descripción: Página del carrito de compras en ADS Store.
+    Permite ver, modificar y eliminar productos antes de proceder al pago.
+    Autor: [Tu Nombre o Equipo]
+    Fecha: [Fecha de última edición]
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - ADS Store</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/tienda.css">
+</head>
+<body>
+    <!-- =======================
+         Navbar de navegación
+         Igual que en index.html, contiene enlaces a las principales secciones
+    ======================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <span class="fw-bold"><i class="fas fa-store me-2"></i>ADS-Store  "OutletShop"</span>
+            </a>
+            <div class="d-flex flex-grow-1 justify-content-center">
+                <ul class="navbar-nav flex-row">
+                    <li class="nav-item">
+                        <a href="https://www.facebook.com/profile.php?id=61550078453724" class="nav-link px-2" target="_blank" title="Facebook"><i class="fab fa-facebook fa-lg text-white"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.instagram.com/OutletShop_for_my/" class="nav-link px-2" target="_blank" title="Instagram"><i class="fab fa-instagram fa-lg text-white"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.youtube.com/@OutletShopTiendaVirtual" class="nav-link px-2" target="_blank" title="YouTube"><i class="fab fa-youtube fa-lg text-white"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://tiktok.com/@outletshoptienda" class="nav-link px-2" target="_blank" title="TikTok"><i class="fab fa-tiktok fa-lg text-white"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="producto-mes.html">¡Lo Más Vendido!</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://harrissonhz.github.io/ADS-academy/index.html" target="_blank">Academia Virtual</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://wa.me/573054476133?text=Hola%20ADS%20estoy%20interesado%20en%20los%20cursos%20virtuales" target="_blank">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrito.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="badge bg-primary" id="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- =======================
+         Carrito de Compras
+         Muestra los productos agregados, permite modificar cantidades o eliminar productos
+    ======================= -->
+    <section class="py-5 mt-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Carrito de Compras</h2>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <div id="cart-items">
+                                <!-- Los items del carrito se cargarán dinámicamente -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">Resumen del Pedido</h4>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Subtotal:</span>
+                                <span id="subtotal">$0.00</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Envío:</span>
+                                <span id="shipping">$0.00</span>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between mb-4">
+                                <span class="fw-bold">Total:</span>
+                                <span class="fw-bold" id="total">$0.00</span>
+                            </div>
+                            <button class="btn btn-primary w-100" id="checkout-btn">Proceder al Pago</button>
+                            <a href="index.html" class="btn btn-outline-secondary w-100 mt-2">Continuar Comprando</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =======================
+         Pie de página (Footer)
+         Información de contacto y enlaces rápidos
+    ======================= -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>ADS Store</h5>
+                    <p>Tu tienda en línea de confianza para productos digitales y físicos. Ofrecemos una experiencia de compra segura y rápida. Descubre nuestras ofertas y disfruta de envíos a todo el país.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="sobre-nosotros.html" class="text-white">Sobre Nosotros</a></li>
+                        <li><a href="politica-privacidad.html" class="text-white">Política de Privacidad</a></li>
+                        <li><a href="terminos-condiciones.html" class="text-white">Términos y Condiciones</a></li>
+                        <li><a href="preguntas-frecuentes.html" class="text-white">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-envelope me-2"></i>outletshoptiendavirtual@gmail.com</li>
+                        <li><i class="fas fa-phone me-2"></i>+57 305 4476 133</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i>Medellín, Colombia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <a href="https://www.facebook.com/profile.php?id=61550078453724" class="text-white me-3" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="https://www.instagram.com/OutletShop_for_my/" class="text-white me-3" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://www.youtube.com/@OutletShopTiendaVirtual" class="text-white me-3" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+                <a href="https://tiktok.com/@outletshoptienda" class="text-white me-3" target="_blank"><i class="fab fa-tiktok fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =======================
+         Scripts JS
+         Incluye Bootstrap y scripts personalizados para la página del carrito
+    ======================= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/carrito.js"></script>
+
+    <!-- WhatsApp Flotante -->
+    <!-- Botón flotante para contacto rápido por WhatsApp -->
+    <a href="https://wa.me/573054476133?text=Hola%20ADS%20estoy%20interesado%20en%20los%20cursos%20virtuales" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</body>
+</html> 

@@ -1,0 +1,245 @@
+<!--
+    Archivo: sobre-nosotros.html
+    Descripción: Página "Sobre Nosotros" para ADS Store. Presenta la historia, misión, visión, valores y equipo de la tienda.
+    Autor: [Tu Nombre o Equipo]
+    Fecha: [Fecha de creación]
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros | ADS Store</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/tienda.css">
+</head>
+<body>
+    <!-- =======================
+         Navbar de navegación
+         Igual que en el resto del sitio
+    ======================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="fw-bold"><i class="fas fa-store me-2"></i>ADS-Store  "OutletShop"</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="producto-mes.html">¡Lo Más Vendido!</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://harrissonhz.github.io/ADS-academy/index.html" target="_blank">Academia Virtual</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://wa.me/573054476133?text=Hola%20ADS%20estoy%20interesado%20en%20los%20cursos%20virtuales" target="_blank">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrito.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="badge bg-primary" id="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- =======================
+         Sección Hero "Sobre Nosotros"
+    ======================= -->
+    <section class="hero-section tienda-hero d-flex align-items-center" style="background-image: url('img/background.jpg'); background-size: cover; background-position: center; min-height: 350px;">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold text-white mb-3">Sobre Nosotros</h1>
+            <p class="lead text-white mb-0">Conoce la historia, misión y valores de ADS Store "OutletShop"</p>
+        </div>
+    </section>
+
+    <!-- =======================
+         Sección Historia (con imagen)
+    ======================= -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5 align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-3">Quiénes Somos</h2>
+                    <p>Bienvenido a OutletShop , tu tienda virtual de confianza para productos importados de alta calidad. Con más de 5 años de experiencia en el mercado, nos especializamos en ofrecer una experiencia de compra cómoda, segura y personalizada. Nuestro compromiso es llevar hasta la puerta de tu hogar los mejores productos, seleccionados cuidadosamente para garantizar tu total satisfacción. En OutletShop , tu bienestar y confianza son nuestra prioridad.</p>
+                    <h2 class="fw-bold mb-3">Nuestra Historia</h2>
+                    <p>OutletShop nació de una necesidad personal. El fundador, ante el desafío de conseguir productos de primera calidad que no se encuentran fácilmente en Colombia, decidió incursionar en el mundo de la importación. Impulsado por el deseo de la excelencia y el compromiso de satisfacer las demandas de los clientes más exigentes, se estableció OutletShop.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/LogoTodasPublicaciones.jpg" alt="Historia OutletShop" class="img-fluid rounded shadow" style="max-width: 400px; width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =======================
+         Sección de Tarjetas de Valores y Diferenciales
+    ======================= -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center g-4 mb-4">
+                <div class="col-md-4">
+                    <div class="card p-4 bg-white rounded shadow h-100">
+                        <i class="fas fa-handshake fa-2x text-primary mb-3"></i>
+                        <h5 class="fw-bold mb-2">Nuestro Compromiso</h5>
+                        <p class="small">Trabajamos cada día para acercar lo mejor del mercado internacional a los hogares colombianos. Seleccionamos cuidadosamente productos importados, asegurándonos de que cada artículo cumpla —y supere— tus expectativas.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 bg-white rounded shadow h-100">
+                        <i class="fas fa-box-open fa-2x text-primary mb-3"></i>
+                        <h5 class="fw-bold mb-2">Nuestra Gama de Productos</h5>
+                        <p class="small">Ofrecemos una cuidada selección que abarca desde moda y tecnología hasta artículos y accesorios para el hogar. Buscamos en todo el mundo los mejores productos para adaptarnos a tus gustos, necesidades y estilo de vida.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 bg-white rounded shadow h-100">
+                        <i class="fas fa-star fa-2x text-primary mb-3"></i>
+                        <h5 class="fw-bold mb-2">Por qué Elegirnos</h5>
+                        <p class="small">Garantía de calidad, conveniencia, entrega a domicilio y un enfoque centrado en el cliente. En OutletShop, tu satisfacción es nuestra prioridad y nuestro equipo está siempre listo para ayudarte.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center g-4">
+                <div class="col-md-4">
+                    <div class="card p-4 bg-white rounded shadow h-100">
+                        <i class="fas fa-bullseye fa-2x text-primary mb-3"></i>
+                        <h5 class="fw-bold mb-2">Misión</h5>
+                        <p class="small">Brindar soluciones innovadoras y productos de alta calidad que mejoren la vida de nuestros clientes, con un servicio excepcional y atención personalizada.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 bg-white rounded shadow h-100">
+                        <i class="fas fa-eye fa-2x text-primary mb-3"></i>
+                        <h5 class="fw-bold mb-2">Visión</h5>
+                        <p class="small">Ser la tienda en línea líder en productos innovadores y experiencias de compra, reconocida por la confianza, la calidad y la cercanía con nuestros clientes.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 bg-white rounded shadow h-100">
+                        <i class="fas fa-heart fa-2x text-primary mb-3"></i>
+                        <h5 class="fw-bold mb-2">Valores</h5>
+                        <ul class="list-unstyled mb-0 small text-start">
+                            <li><i class="fas fa-check text-success me-2"></i>Innovación</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Calidad</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Honestidad</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Compromiso</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Empatía</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =======================
+         Sección Nuestro Equipo
+    ======================= -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-3">Nuestro Equipo</h2>
+                    <p>Detrás de OutletShop hay un equipo multidisciplinario comprometido con la excelencia. Contamos con profesionales expertos en tecnología, diseño, logística y atención al cliente, que trabajan de forma coordinada para ofrecerte una experiencia de compra excepcional. Nos apasiona lo que hacemos y nos esforzamos cada día en seleccionar los mejores productos, optimizar cada detalle del proceso y brindarte un servicio cercano, ágil y confiable. Estamos aquí para acompañarte en cada etapa, desde que eliges un producto hasta que lo recibes en la puerta de tu hogar.</p>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <!-- Carrusel de imágenes del equipo -->
+                    <div id="equipoCarousel" class="carousel slide shadow rounded" data-bs-ride="carousel" data-bs-interval="2000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/Programador.jpg" class="d-block w-100" alt="Equipo 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/SoporteLaptop.jpg" class="d-block w-100" alt="Equipo 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Microfono.jpg" class="d-block w-100" alt="Equipo 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Patineta.jpg" class="d-block w-100" alt="Equipo 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/HerramientaProfesional.jpg" class="d-block w-100" alt="Equipo 5">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/CursoOnline.jpg" class="d-block w-100" alt="Equipo 6">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#equipoCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#equipoCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- =======================
+         Pie de página (Footer)
+    ======================= -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>ADS Store</h5>
+                    <p>Tu tienda en línea de confianza para productos digitales y físicos. Ofrecemos una experiencia de compra segura y rápida. Descubre nuestras ofertas y disfruta de envíos a todo el país.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="sobre-nosotros.html" class="text-white">Sobre Nosotros</a></li>
+                        <li><a href="politica-privacidad.html" class="text-white">Política de Privacidad</a></li>
+                        <li><a href="terminos-condiciones.html" class="text-white">Términos y Condiciones</a></li>
+                        <li><a href="preguntas-frecuentes.html" class="text-white">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-envelope me-2"></i>outletshoptiendavirtual@gmail.com</li>
+                        <li><i class="fas fa-phone me-2"></i>+57 305 4476 133</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i>Medellín, Colombia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <a href="#" class="text-white me-3" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="https://www.instagram.com/OutletShop_for_my/" class="text-white me-3" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://www.youtube.com/@OutletShopTiendaVirtual" class="text-white me-3" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+                <a href="#" class="text-white me-3" target="_blank"><i class="fab fa-tiktok fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =======================
+         Scripts JS
+    ======================= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/tienda.js"></script>
+
+    <!-- WhatsApp Flotante -->
+    <a href="https://wa.me/573054476133?text=Hola%20ADS%20estoy%20interesado%20en%20los%20cursos%20virtuales" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</body>
+</html> 
