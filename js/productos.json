@@ -1,0 +1,136 @@
+[
+  {"id": "AL012-BotonEncendidoMoto",
+    "nombre": "Cubierta Encendido de moto y Carro giratorio",
+    "descripcion": "Cubiertas giratorias para llaves de encendido de motos y carros, con diseños variados y estilo único. Protegen contra desgaste y suciedad, permiten giro de 360° sin quitar la cubierta, y son fáciles de instalar. Fabricadas con materiales duraderos y compatibles con una amplia variedad de modelos. Personaliza tu vehículo con protección y estilo.",
+    "precio": 40000,
+    "color": ["Negro"],
+    "diseño": ["Bandera USA", "Botón Start", "Batman","Transformers","Punisher"],
+    "categorias": ["Todos Los Productos", "Hombres", "vehículos", "Imperdibles", "Producto del Mes"],
+    "imagenes": [
+      "https://outletshop.github.io/imgTienda/img/AL012-BotonEncendidoMoto/Batman.jpg",
+      "https://outletshop.github.io/imgTienda/img/AL012-BotonEncendidoMoto/Transformers.jpg",
+      "https://outletshop.github.io/imgTienda/img/AL012-BotonEncendidoMoto/Pulisher.jpg",
+      "https://outletshop.github.io/imgTienda/img/AL012-BotonEncendidoMoto/Start.jpg",
+      "https://outletshop.github.io/imgTienda/img/AL012-BotonEncendidoMoto/Bandera.jpg"      
+    ],
+    "video": "https://www.youtube.com/embed/o-fPHoobRaA?si=vT948fj0ByTwvjVE",
+    "caracteristicas": [
+      "Giro de 360°: Permite acceder a los botones sin retirar la cubierta.",
+      "Diseños variados: Desde estilos clásicos hasta patrones llamativos.",
+      "Protección total: Evita rayones, suciedad y desgaste en la llave.",
+      "Material resistente: Fabricada con materiales duraderos de alta calidad.",
+	  "Fácil instalación: Se coloca en segundos, sin herramientas.",
+	  "Compatibilidad universal: Apta para una amplia gama de llaves de motos y carros.",
+	  " Toque personal: Añade estilo y personalidad a tu vehículo."
+    ],
+    "agotado": false
+  },
+  {
+    "id": "AL001-CompresorPortatil",
+    "nombre": "Compresor portátil para vehículo",
+    "descripcion": "Estamos emocionados de presentarles nuestro Compresor portátil para vehículo.Con tu Carsun CAV 12, las tareas manuales que requieran presión de aire serán mucho más sencillas. Ahorra tiempo y logra excelentes resultados sin esfuerzo. Para trabajos domésticos Su potencia de 120W lo convierte en la herramienta necesaria para labores domésticas.",
+    "precio": 100000,
+    "color": ["Amarillo"],
+    "categorias": ["Todos Los Productos", "Hombres", "vehículos"],
+    "imagenes": [
+      "https://outletshop.github.io/imgTienda/img/AL001-CompresorPortatil/Compresor0.jpg",
+	  "https://outletshop.github.io/imgTienda/img/AL001-CompresorPortatil/Compresor1.jpg",
+	  "https://outletshop.github.io/imgTienda/img/AL001-CompresorPortatil/Compresor2.jpg",
+	  "https://outletshop.github.io/imgTienda/img/AL001-CompresorPortatil/Compresor3.jpg",
+	  "https://outletshop.github.io/imgTienda/img/AL001-CompresorPortatil/Compresor4.jpg",
+	  "https://outletshop.github.io/imgTienda/img/AL001-CompresorPortatil/Compresor5.jpg"
+    ],
+    "video": "https://www.youtube.com/embed/otroVideoID",
+    "caracteristicas": [
+      "Pantalla digital de alta definición",
+      "Diseño compacto y ligero",
+	  "fácil de transportar",
+	  "Se puede cambiar la medida de la presión: bar, psi",
+	  "Apagado automático",
+	  "Pantalla digital retro iluminada",
+	  "Luz LED"
+    ],
+    "agotado": true
+  },
+  {
+    "id": "AL011-MicrofonoCelular",
+    "nombre": "Micrófono Inalámbrico 2 en 1 para iPhone y Android Tipo C (OMC-523)",
+    "descripcion": "Este dispositivo es una solución versátil y de alta calidad para aquellos que buscan mejorar su experiencia de grabación de audio en dispositivos móviles, ya sea para contenido multimedia, llamadas o cualquier otra aplicación donde el sonido claro sea esencial. Incluye adaptadores para iPhone y Android, batería de larga duración y diseño compacto.",
+    "precio": 70000,
+    "descuento": 60000,
+    "color": ["Negro", "Blanco", "Gris"],
+    "diseño": ["Redondo", "Cuadrado", "Triangular"],
+    "categorias": ["Tecnología", "Accesorios", "Cursos Virtuales", "Hombres"],
+    "imagenes": [
+      "img/Microfono.jpg",
+      "img/Patineta.jpg",
+      "img/SoporteLaptop.jpg",
+      "img/BannerAds.jpg",
+      "img/CursoOnline.jpg",
+      "img/Programador.jpg"
+    ],
+    "video": "https://youtube.com/shorts/o-fPHoobRaA?feature=share",
+    "caracteristicas": [
+      "Giro de 360°: Permite acceder a los botones sin retirar la cubierta.",
+      "Diseños variados: Desde estilos clásicos hasta patrones llamativos.",
+      "Protección total: Evita rayones, suciedad y desgaste en la llave.",
+      "Material resistente: Fabricada con materiales duraderos de alta calidad.",
+	  "Fácil instalación: Se coloca en segundos, sin herramientas.",
+	  "Compatibilidad universal: Apta para una amplia gama de llaves de motos y carros.",
+	  " Toque personal: Añade estilo y personalidad a tu vehículo."
+    ],
+    "agotado": false
+  },
+  {
+    "id": "patineta-newboler",
+    "nombre": "Bolso Patineta Eléctrica NEWBOLER",
+    "descripcion": "El compañero ideal para llevar tu patineta eléctrica a todas partes! Diseñado para brindarte comodidad y estilo, este bolso es la solución perfecta para transportar tus objetos personales en tu patineta de manera fácil y elegante.",
+    "precio": 80000,
+    "color": ["Gris"],
+    "talla": "Única",
+    "categorias": ["Deportes", "Accesorios", "Aire Libre", "Hombres"],
+    "imagenes": [
+      "img/Patineta.jpg"
+    ],
+    "video": "https://www.youtube.com/embed/otroVideoID",
+    "caracteristicas": [
+      "Material resistente al agua",
+      "Gran capacidad de almacenamiento"
+    ],
+    "agotado": false
+  },
+  {
+    "id": "soporte-laptop-araña",
+    "nombre": "Soporte para Computador Portátil en aluminio en forma de araña",
+    "descripcion": "Soporte ergonómico ajustable para laptop que mejora la postura y la ventilación de tu dispositivo. En aluminio, con un diseño moderno y funcional. y con un diseño de aluminio en forma de araña exclusivo para ti. en forma de araña con 5 niveles de altura ajustable.",
+    "precio": 40000,
+    "categorias": ["Tecnología", "Accesorios", "Oficina", "Hombres","Mujeres"],
+    "imagenes": [
+      "img/SoporteLaptop.jpg"
+    ],
+    "video": "https://www.youtube.com/embed/otroVideoID2",
+    "caracteristicas": [
+      "Aluminio resistente",
+      "5 niveles de altura ajustable",
+      "Mejora la ventilación"
+    ],
+    "agotado": false
+  },
+  {
+    "id": "Curso Online",
+    "nombre": "Curso Online, Curso OnlineCurso OnlineCurso OnlineSoporte para Computador Portátil en aluminio en forma de araña",
+    "descripcion": "Soporte ergonómico ajustable para laptop que mejora la postura y la ventilación de tu dispositivo. En aluminio, con un diseño moderno y funcional. y con un diseño de aluminio en forma de araña exclusivo para ti. en forma de araña con 5 niveles de altura ajustable.",
+    "precio": 40000,
+    "categorias": ["Tecnología", "Accesorios", "Oficina", "Hombres","Mujeres"],
+    "imagenes": [
+      "img/SoporteLaptop.jpg"
+    ],
+    "video": "https://www.youtube.com/embed/otroVideoID2",
+    "caracteristicas": [
+      "Aluminio resistente",
+      "5 niveles de altura ajustable",
+      "Mejora la ventilación"
+    ],
+    "agotado": false
+  }
+] 
